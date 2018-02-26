@@ -1,11 +1,9 @@
 const Mocha=require("mocha");
 const assert=require("assert");
-const Circlefit=require("../index.js"); 
+const cf=require("../index.js"); 
 
 
 describe("Circlefit", function(){
-
-	let cf=new Circlefit();
 
 	describe("compute()", function(){
 

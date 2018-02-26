@@ -36,7 +36,7 @@ class Circlefit {
 	 * @param {array} vector
 	 * @return {array}
 	 */
-	_linearSolve2x2(matrix, vector) {
+	static _linearSolve2x2(matrix, vector) {
 	
 		let det = matrix[0]*matrix[3] - matrix[1]*matrix[2];
 		if (det < 1e-8) return false; //no solution
@@ -51,7 +51,7 @@ class Circlefit {
 	 * @param {array} points an array containing a set of objects like {x: x, y: y}
 	 * @result {object} result
 	 */
-	compute (points) {
+	static compute (points) {
 
 		let result = {
 		  points: points,
