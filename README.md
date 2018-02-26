@@ -2,13 +2,14 @@
 Fast circle fitting of a set of 2D points based on Least-Squares method from Michael Migliore's circle-fit: https://github.com/Meakk/circle-fit
 
 
-# Install and test
+# Install
 ```> npm install --save circle-fit```
+# Test
 ```> mocha```
 
 # Synopsis
 ```javascript
-const Circlefit=require("../index.js"); 
+const Circlefit=require("circle-fit"); 
 let result = cf.compute([ 
 	{ x: 10,	y: 10 },
 	{ x: 11,	y: 7 },
